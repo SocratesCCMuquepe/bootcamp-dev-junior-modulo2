@@ -27,9 +27,9 @@
         }
         .flex-container{
             display: flex;
-            background-color: #006A6A;
+            
             justify-content: space-around;
-            padding: 20px;
+         
         }
         .header-title{
             color: #006A6A;
@@ -41,6 +41,37 @@
             font-size: 20px;
             font-weight: 500;
             margin-bottom: 15px;
+        }
+        .col-1{
+            padding: 20px;
+            background-color: #006A6A;
+            width: 50%;
+        }
+        .subscriptin-title{
+            color: #e9e9e9;
+            text-align: center;
+        }
+        .price{
+            color: #e9e9e9;
+            font-size: 28px;
+            font-style: inherit;
+        }
+        .month{
+            color: #e9e9e9;
+            font-size: 15px;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        .botaoAssineAgora{
+            color: #006A6A;
+            padding: 10px 70px 10px 70px;
+        }
+
+        .col-2{
+            color: #e9e9e9;
+            background-color: #009E9E;
+            padding: 20px;
+            width: 50%;
         }
     </style>
 </head>
@@ -54,13 +85,14 @@
             <br/>Tenha suporte da nossa e quipa e cresça mais rapido na sua carreira.<p>
         </div>
         <div class="flex-container">
-            <div>
-                <p>Assinarura mensal:</p>
-                <h1>R$ 99,99</h1><i>por mês</i>
+            <div class="col-1">
+                <p class="subscriptin-title">Assinarura mensal:</p>
+                <span class="price">R$ 99,99</span>
+                <span class="month"> por mês</span>
                 <p>Cancele a qualquer momento.</p>
-                <a href="">Assine agora</a>
+                <button class="botaoAssineAgora">Assine agora</button>
             </div>
-            <div>
+            <div class="col-2">
                 <img src="#" alt="icon">
                 <p>Titulo da lista</p>
                 <ul>
